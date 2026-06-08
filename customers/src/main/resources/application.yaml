@@ -1,3 +1,16 @@
 spring:
   application:
     name: customers
+  datasource:
+    url: jdbc:postgresql://localhost:5555/ipurchasecustomers
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+server:
+  port: 8082
